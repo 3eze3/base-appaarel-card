@@ -1,0 +1,51 @@
+@use "../abtract/variables" as colors_bg;
+@font-face {
+  font-family: josefin_light;
+  src: url("../assets/fonts/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: josefin_regular;
+  src: url("../assets/fonts/JosefinSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: josefin_bold;
+  src: url("../assets/fonts/JosefinSans-Bold.ttf");
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: var(--tipo-principal);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+form,
+input,
+label {
+  // font-family: ;
+  // font-size: ;
+  // color: ;
+  display: block;
+  appearance: none;
+}
+
+button {
+  // background-image: ;
+}
+
+h1 {
+  // font-size: ;
+  // color: inherit;
+  // line-height: ;
+  // letter-spacing: ;
+}
+p {
+  // font-size: ;
+  // color: inherit;
+  // line-height: ;
+  // color: ;
+}
