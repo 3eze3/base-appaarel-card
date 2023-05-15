@@ -1,0 +1,88 @@
+@font-face {
+  font-family: josefin_light;
+  src: url("../assets/fonts/JosefinSans-Light.ttf");
+}
+@font-face {
+  font-family: josefin_regular;
+  src: url("../assets/fonts/JosefinSans-Regular.ttf");
+}
+@font-face {
+  font-family: josefin_bold;
+  src: url("../assets/fonts/JosefinSans-Bold.ttf");
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: josefin_bold;
+  font-size: 4.5rem;
+  line-height: 1.5em;
+  letter-spacing: 0.06em;
+  color: hsl(0deg, 6%, 24%);
+}
+
+p {
+  font-family: josefin_regular;
+  font-size: 1em;
+  line-height: 1.5;
+  color: hsl(0deg, 36%, 70%);
+  hyphens: manual;
+}
+
+form,
+input,
+label {
+  font-family: josefin_light;
+  display: block;
+  appearance: none;
+  color: hsl(0deg, 36%, 70%);
+}
+
+input {
+  font-size: 0.95em;
+}
+
+button {
+  background-image: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before,
+*::after {
+  display: block;
+}
+
+img,
+picture {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/*# sourceMappingURL=style.css.map */
