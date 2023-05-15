@@ -17,35 +17,40 @@
 body {
   min-height: 100vh;
   font-size: 16px;
-  font-family: var(--tipo-principal);
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-family: josefin_bold;
+  font-size: 4.5rem;
+  line-height: 1.5em;
+  letter-spacing: 0.06em;
+  color: colors_bg.$dark-grayish-red;
+}
+
+p {
+  font-family: josefin_regular;
+  font-size: 1em;
+  line-height: 1.5;
+  color: colors_bg.$desaturated-red;
+  hyphens: manual;
+}
+
 form,
 input,
 label {
-  // font-family: ;
-  // font-size: ;
-  // color: ;
+  font-family: josefin_light;
   display: block;
   appearance: none;
+  color: colors_bg.$desaturated-red;
+}
+
+input {
+  font-size: 0.95em;
 }
 
 button {
-  // background-image: ;
-}
-
-h1 {
-  // font-size: ;
-  // color: inherit;
-  // line-height: ;
-  // letter-spacing: ;
-}
-p {
-  // font-size: ;
-  // color: inherit;
-  // line-height: ;
-  // color: ;
+  background-image: colors_bg.$linear-orange;
 }
