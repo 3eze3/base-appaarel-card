@@ -5,19 +5,39 @@
   height: 100vh;
   margin-inline: auto;
   @include layout.flex($align: flex-start, $direction: row, $gap: 0);
-
+  @include layout.media-break() {
+    @include layout.flex($direction: column-reverse, $gap: 3rem);
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+  }
   &__content {
     flex: 60%;
-    // outline: solid red 1px;
-    padding-top: 1.9rem;
-    padding-left: 7rem;
+    padding: 1.9rem 0 0 7rem;
+    @include layout.media-break() {
+      padding: 0rem 0 5rem 0;
+    }
   }
   &__icon {
-    width: 12rem;
+    width: 11rem;
     margin: 2rem 0 9rem;
+    @include layout.media-break() {
+      width: 8rem;
+      margin: 0;
+    }
+  }
+  &__box {
+    @include layout.media-break() {
+      position: absolute;
+      top: 2.1rem;
+      left: 2rem;
+    }
   }
   &__wrapper {
     width: 70%;
+    @include layout.media-break() {
+      width: 100%;
+    }
   }
 
   &__ilustration {
