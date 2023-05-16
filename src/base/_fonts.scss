@@ -1,4 +1,5 @@
 @use "../abtract/variables" as colors_bg;
+@use "../abtract/mixin" as layout;
 @font-face {
   font-family: josefin_light;
   src: url("../assets/fonts/JosefinSans-Light.ttf");
@@ -36,6 +37,10 @@ h1 {
     color: colors_bg.$desaturated-red;
     font-weight: 100;
   }
+  @include layout.media-break() {
+    text-align: center;
+    font-size: colors_bg.$lg_mobile;
+  }
 }
 
 p {
@@ -44,6 +49,9 @@ p {
   line-height: 1.5;
   color: colors_bg.$desaturated-red;
   hyphens: manual;
+  @include layout.media-break() {
+    text-align: center;
+  }
 }
 
 form,
