@@ -13,15 +13,18 @@
   display: block;
 }
 
-img,
-picture {
-  max-width: 100%;
+img {
   width: 100%;
+  height: 100%;
+  max-width: 100%;
   display: block;
   object-fit: cover;
   object-position: center center;
 }
-
+picture {
+  width: 100%;
+  height: 100%;
+}
 html {
   scroll-behavior: smooth;
 }
