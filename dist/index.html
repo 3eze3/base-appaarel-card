@@ -34,10 +34,20 @@
             <label class="register__email" for="email">Enter your email:</label>
             <input
               class="register__input"
-              type="text"
+              type="email"
               name="email"
               id="email"
               placeholder="Email Addres" />
+            <div class="register__box">
+              <img
+                class="register__icon"
+                src="assets/images/icon-error.svg"
+                alt="" />
+              <p class="register__advertence">
+                You just put something that is not validated as an email
+                address.
+              </p>
+            </div>
             <button class="register__button" aria-label="button register">
               <img src="assets/images/icon-arrow.svg" alt aria-hidden="true" />
             </button>
@@ -49,10 +59,16 @@
           srcset="assets/images/hero-desktop.jpg"
           media="(min-width:1024px)" />
         <img
-          class="card__im"
           src="assets/images/hero-mobile.jpg"
           alt="ilustration of the woman model" />
       </picture>
+      <div class="card__thanks">
+        <p
+          class="card__thanksDescription"
+          style="text-align: center; font-size: 2em; color: #052820">
+          Gracias por tomarte el tiempo para ver este projecto
+        </p>
+      </div>
     </main>
   </body>
 </html>
