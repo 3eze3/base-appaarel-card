@@ -24,15 +24,23 @@ body {
 
 h1 {
   font-family: josefin_bold;
-  font-size: 4.5rem;
-  line-height: 1.5em;
-  letter-spacing: 0.06em;
+  font-size: colors_bg.$lg;
+  line-height: 1.2em;
+  letter-spacing: 0.25em;
   color: colors_bg.$dark-grayish-red;
+  margin-bottom: 1rem;
+  &::before {
+    content: "WE'RE";
+    display: block;
+    font-family: josefin_light;
+    color: colors_bg.$desaturated-red;
+    font-weight: 100;
+  }
 }
 
 p {
   font-family: josefin_regular;
-  font-size: 1em;
+  font-size: colors_bg.$md;
   line-height: 1.5;
   color: colors_bg.$desaturated-red;
   hyphens: manual;
@@ -48,9 +56,12 @@ label {
 }
 
 input {
-  font-size: 0.95em;
+  font-size: colors_bg.$sm;
 }
 
 button {
   background-image: colors_bg.$linear-orange;
+  cursor: pointer;
+  &:hover {
+  }
 }
