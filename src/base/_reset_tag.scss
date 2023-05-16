@@ -31,3 +31,6 @@ svg {
   display: block;
   fill: currentColor;
 }
+input[type="email"]::webkit-validation-bubble-message {
+  display: none;
+}
