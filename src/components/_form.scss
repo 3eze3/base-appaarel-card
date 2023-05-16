@@ -30,4 +30,22 @@
       padding: 1.2rem 2rem;
     }
   }
+  &__box {
+    width: 80%;
+    padding-inline: 1rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    border-radius: 2rem;
+    @include layout.flex($direction: row, $gap: 2rem);
+    outline: solid rgba(86, 84, 84, 0.515) 1px;
+    transform: translateY(30rem);
+  }
+  &__icon {
+    width: 4rem;
+  }
+
+  &__active {
+    transform: translateY(0.5rem);
+  }
 }
