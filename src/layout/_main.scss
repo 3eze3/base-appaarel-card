@@ -4,13 +4,22 @@
   width: 92%;
   height: 100vh;
   margin-inline: auto;
-  //
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  @include layout.flex($align: flex-start, $direction: row, $gap: 0);
+
   &__content {
     flex: 60%;
+    // outline: solid red 1px;
+    padding-top: 1.9rem;
+    padding-left: 7rem;
   }
+  &__icon {
+    width: 12rem;
+    margin: 2rem 0 9rem;
+  }
+  &__wrapper {
+    width: 70%;
+  }
+
   &__ilustration {
     flex: 45%;
   }
